@@ -56,7 +56,8 @@ class _LastExampleState extends State<LastExample> {
                           width: MediaQuery.of(context).size.width * 1,
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
-                            itemCount: snapshot.data!.data![index].products![index].images!.length,
+                            itemCount: snapshot.data!.data![index]
+                                .products![index].images!.length,
                             itemBuilder: (context, position) {
                               return Container(
                                 height:

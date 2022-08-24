@@ -1,5 +1,6 @@
 import 'package:api_tutor_1/example_four.dart';
 import 'package:api_tutor_1/example_three.dart';
+import 'package:api_tutor_1/image_upload.dart';
 import 'package:api_tutor_1/last_example.dart';
 import 'package:api_tutor_1/signin.dart';
 import 'package:api_tutor_1/signup.dart';
@@ -114,6 +115,16 @@ class MainScreen extends StatelessWidget {
                 ));
               },
               child: const Text("Sign In"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, CupertinoPageRoute(
+                  builder: (context) {
+                    return const UploadImageScreen();
+                  },
+                ));
+              },
+              child: const Text("Upload Image"),
             ),
           ],
         ),
