@@ -1,5 +1,8 @@
 import 'package:api_tutor_1/example_four.dart';
 import 'package:api_tutor_1/example_three.dart';
+import 'package:api_tutor_1/last_example.dart';
+import 'package:api_tutor_1/signin.dart';
+import 'package:api_tutor_1/signup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -81,6 +84,36 @@ class MainScreen extends StatelessWidget {
                 ));
               },
               child: const Text("4th Example"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, CupertinoPageRoute(
+                  builder: (context) {
+                    return const LastExample();
+                  },
+                ));
+              },
+              child: const Text("Last Example"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, CupertinoPageRoute(
+                  builder: (context) {
+                    return const SignUp();
+                  },
+                ));
+              },
+              child: const Text("Sign Up"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, CupertinoPageRoute(
+                  builder: (context) {
+                    return const SignIn();
+                  },
+                ));
+              },
+              child: const Text("Sign In"),
             ),
           ],
         ),
